@@ -11,7 +11,7 @@ var  Store = Object.assign({},Backbone.Events,{
 
 	sum: function(objKey){
 		this.data[objKey] += 1
-		this.data.chores +=1
+		this.data.chores += 1
 		this.data = Object.assign(this.data, this.data[objKey], this.data.choresDone)
 		this.trigger('dataUpdated')
 	}

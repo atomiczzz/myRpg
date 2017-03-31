@@ -31,10 +31,10 @@ var ChoresToDo = React.createClass({
 
 		return(
 			<div className='buttons'>
-				<button type='button' onClick={()=>{Store.sum('strength')}}> Do push ups </button>
-				<button type='button' onClick={()=>{Store.sum('knowledge')}}> Read a book </button>
-				<button type='button' onClick={()=>{Store.sum('cleanDish')}}> Clean Dishes </button>
-				<button type='button' onClick={()=>{Store.sum('health')}}> Eat vegetables </button>
+				<button type='button' class='btn btn-primary' onClick={()=>{Store.sum('strength')}}> Do push ups </button>
+				<button type='button' class='btn btn-primary' onClick={()=>{Store.sum('knowledge')}}> Read a book </button>
+				<button type='button' class='btn btn-primary' onClick={()=>{Store.sum('cleanDish')}}> Clean Dishes </button>
+				<button type='button' class='btn btn-primary' onClick={()=>{Store.sum('health')}}> Eat vegetables </button>
 			</div>
 		)
 	}
